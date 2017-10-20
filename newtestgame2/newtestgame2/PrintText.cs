@@ -14,6 +14,7 @@ namespace newtestgame2
     class PrintText //skriver text
     {
         SpriteFont font;
+        
 
         public PrintText(SpriteFont font)
         {
@@ -24,7 +25,13 @@ namespace newtestgame2
         {
 
             spriteBatch.DrawString(font, text, new Vector2(X, Y), Color.White);
+            
+        }
 
+        public void Print(string text, SpriteBatch spriteBatch, float X, float Y)
+        {
+            
+            spriteBatch.DrawString(font, text, new Vector2(X, Y), Color.White);
         }
     }
 }

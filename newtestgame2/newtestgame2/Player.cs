@@ -302,6 +302,7 @@ namespace newtestgame2
                         else
                         {
                             health -= 50;
+                            explosions.Remove(e);
                         }
 
 
@@ -321,6 +322,7 @@ namespace newtestgame2
                         else
                         {
                             opponent.Health -= 50;
+                            explosions.Remove(e);
                         }
 
 
@@ -360,6 +362,7 @@ namespace newtestgame2
             bombs.Clear();
             timeSinceLastBomb = 0;
             isAlive = true;
+            health = 1000;
 
         }
 

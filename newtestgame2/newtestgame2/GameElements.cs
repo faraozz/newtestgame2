@@ -230,7 +230,9 @@ namespace newtestgame2
                 am.Draw(spriteBatch);
             }
             printText.Print("M ConsW: " + player.Consecutivewins + " O ConsW: " + player2.Consecutivewins, spriteBatch, 0, 0);
-            printText.Print("M Bomb: " + player.Antalbomber + "M Health: " + player.Health + " O Bomb: " + player2.Antalbomber + " O Health: " + player2.Health, spriteBatch, 0, 30);
+            printText.Print("M Bomb: " + player.Antalbomber  + " O Bomb: " + player2.Antalbomber, spriteBatch, 0, 30);
+            printText.Print(player.Health.ToString() , spriteBatch, player.X -2, player.Y - 24);
+            printText.Print(player2.Health.ToString(), spriteBatch, player2.X -2, player2.Y - 24);
         }
 
         public static State WildUpdate(ContentManager content, GameWindow Window, GameTime gameTime)
